@@ -10,9 +10,7 @@ To see the fully functional site, please visit: [Salary Calculator](https://susi
 
 ## Screen Shot
 
-![alt text](image.png)
-
-![alt text](image-1.png)
+![Screenshot of salary calculator](image.png)
 
 ### Prerequisites
 
@@ -33,24 +31,17 @@ For testing, after the installation:
 
 How does someone use this application?
 
-1. A simple web application that takes in **employeee** information that will require a user's input
-    - First Name
-    - Last Name
-    - Id
-    - Title
-    - Annual Salary
+1. A simple web application that takes in **employeee** information that will require a user's input and added by the user.
 
-1. After completing 
-    - First Name
-    - Last Name
-    - Id
-    - Title
-    - Annual Salary
+   - First Name
+   - Last Name
+   - Id
+   - Title
+   - Annual Salary
 
+2. The monthly total will be determined by the total annual salary of all employees. The user will also have the option to remove the employee information with the delete button.
 
-
-
-Each employee has a annual salary that will be added by the user. The monthly total will be determined by the total annual salary of all employees. The user will also have the option to remove the employee information with the delete button.
+3. Once the chosen employee is deleted, the total monthly cost should remove the monthly cost accrued from that specific employee that was deleted.
 
 ## Built With
 
@@ -64,4 +55,4 @@ Thanks to [Prime Digital Academy](www.primeacademy.io) who equipped and helped m
 
 ## Support
 
-If you have suggestions or issues, please email me at [youremail@whatever.com](www.google.com)
+If you have suggestions or issues, please email me at [soutsada@comcast.net](mailto:soutsada@comcast.net).
