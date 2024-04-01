@@ -67,16 +67,23 @@ function calcEmpCost() {
   for (let j = 0; j < empAllNum.length; j++) {
     total += Number(empAllNum[j]);
   }
-  empMonthlyTotal = total / 2;
+  empMonthlyTotal = total / 12;
 
   // Render total cost
-  empMonthlyCostTotal.innerHTML = `<p id="employee-monthly-cost">$${empMonthlyTotal.toLocaleString()}</p>`;
+  empMonthlyCostTotal.innerHTML = `<p id="employee-monthly-cost">$${Number.parseFloat(
+    empMonthlyTotal
+  )
+    .toFixed(2)
+    .toLocaleString()}</p>`;
 
   // Over-budget calculation
   if (empMonthlyTotal >= 20000) {
     // Render over-budget
-    empMonthlyCostTotal.innerHTML = `<p id="employee-monthly-cost" class="over-budget">$${empMonthlyTotal.toLocaleString()}</p>`;
 
+    //  One way
+    // empMonthlyCostTotal.innerHTML = `<p id="employee-monthly-cost" class="over-budget">$${empMonthlyTotal.toLocaleString()}</p>`;
+
+    // Another way
     let footerWarning = document.getElementById('footer-warning');
     footerWarning.classList.add('over-budget');
   }

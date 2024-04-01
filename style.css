@@ -112,6 +112,7 @@ input[type='number'] {
   flex-direction: row;
   flex-basis: 100%;
   justify-content: flex-end;
+  padding: 2em 1em;
 }
 
 .employee-table-container {
@@ -169,7 +170,7 @@ tbody {
   justify-content: start;
 }
 
-#employee-info {
+*/ #employee-info {
   display: flex;
   flex-direction: row;
 }
@@ -178,6 +179,9 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  background-color: lavenderblush;
+  border: 1px dotted black;
+  padding: 1em 2em;
 }
 
 footer > p {
@@ -187,4 +191,5 @@ footer > p {
 
 .over-budget {
   color: red;
+  font-size: 1.25em;
 }
