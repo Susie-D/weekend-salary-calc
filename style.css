@@ -169,7 +169,7 @@ tbody {
   justify-content: start;
 }
 
-*/ #employee-info {
+#employee-info {
   display: flex;
   flex-direction: row;
 }
