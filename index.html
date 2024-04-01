@@ -1,20 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="style.css">
-  <title>Salary Calculator</title>
-</head>
-<body>
-  <header>
-    <h1>Salary Calculator</h1>
-  </header>
-  <main>
-    <h2>Add Employee</h2>
-    <h2>Employees</h2>
-  </main>
-  <footer>
-    <p>Total Monthly</p>
-  </footer>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <title>Salary Calculator</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="main-content">
+        <header>
+          <h1 class="header-content">Salary Calculator</h1>
+        </header>
+        <main>
+          <div class="add-employee-container">
+            <h2>Add Employee</h2>
+            <form class="form-container">
+              <div class="form-content">
+                <div class="form-input-content">
+                  <label class="form-input-header">First Name</label>
+                  <input
+                    class="form-input-text"
+                    type="text"
+                    id="firstName"
+                    name="firstName"
+                    placeholder=""
+                    data-testid="firstNameInput"
+                  />
+                </div>
+                <div class="form-input-content">
+                  <label class="form-input-header">Last Name</label>
+                  <input
+                    class="form-input-text"
+                    type="text"
+                    id="lastName"
+                    name="lastName"
+                    placeholder=""
+                    data-testid="lastNameInput"
+                  />
+                </div>
+                <div class="form-input-content">
+                  <label class="form-input-header">ID</label>
+                  <input
+                    class="form-input-text"
+                    type="number"
+                    id="id"
+                    name="id"
+                    placeholder=""
+                    data-testid="idInput"
+                  />
+                </div>
+                <div class="form-input-content">
+                  <label class="form-input-header">Title</label>
+                  <input
+                    class="form-input-text"
+                    type="text"
+                    id="title"
+                    name="title"
+                    placeholder=""
+                    data-testid="titleInput"
+                  />
+                </div>
+                <div class="form-input-content">
+                  <label class="form-input-header">Annual Salary</label>
+                  <input
+                    class="form-input-text"
+                    type="text"
+                    id="annualSalary"
+                    name="annualSalary"
+                    placeholder=""
+                    data-testid="annualSalaryInput"
+                  />
+                </div>
+              </div>
+              <div class="form-input-submit">
+                <button
+                  type="submit"
+                  onClick="addEmployee(event)"
+                  data-testid="submitButton"
+                >
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="employee-table-container">
+            <h2>Employees</h2>
+            <table>
+              <thead>
+                <tr>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>ID</th>
+                  <th>Title</th>
+                  <th>Annual Salary</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody id="employee-info"></tbody>
+            </table>
+          </div>
+        </main>
+        <div>
+          <footer>
+            <p>Total Monthly:&nbsp&nbsp</p>
+            <br />
+            <p id="employee-monthly-cost">0</p>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

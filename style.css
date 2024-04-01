@@ -1,0 +1,190 @@
+html {
+  display: flex;
+  align-content: center;
+  background-color: black;
+  height: -webkit-fill-available;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  /* margin: 40px; */
+  margin: auto;
+
+  font-family: fantasy;
+}
+
+.main-container {
+  background-color: black;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  /* height: 10vh; */
+  margin: 15%;
+  border: 5em dotted pink;
+  background-color: white;
+  padding: 3em;
+}
+
+header > h1 {
+  display: flex;
+  justify-content: center;
+}
+
+.header-content {
+  border: 1px dotted black;
+  background-color: lavenderblush;
+  padding: 5%;
+}
+
+h2 {
+  margin-left: 20px;
+}
+
+button {
+  width: 6em;
+  height: 2em;
+  border-radius: 1em;
+  border: 1px dotted black;
+}
+
+button:hover {
+  background-color: lavenderblush;
+  font-weight: 600;
+  border: 2px dotted black;
+}
+
+.add-employee-container {
+  /* border: 1px solid orange; */
+  margin: 40px 0;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 40px 0;
+  /* border: 1px solid pink; */
+}
+
+.form-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 5px;
+  flex-basis: 100%;
+  background-color: lavenderblush;
+  padding: 2em;
+  border: 1px dotted black;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+.form-input-content {
+  margin: 10px;
+}
+
+.form-input-header {
+  display: flex;
+  flex-direction: row;
+}
+
+.form-input-text {
+  display: flex;
+  flex-direction: row;
+  width: 105%;
+}
+
+.form-input-submit {
+  display: flex;
+  flex-direction: row;
+  flex-basis: 100%;
+  justify-content: flex-end;
+}
+
+.employee-table-container {
+  margin-top: 20px;
+  /* border: 1px solid forestgreen; */
+  flex-basis: 100%;
+  margin: 40px 0;
+}
+
+table {
+  display: flex;
+  flex-direction: column;
+}
+
+thead,
+tr,
+th,
+td {
+  display: flex;
+  flex-direction: row;
+  flex-basis: 100%;
+  padding: 1px;
+}
+
+th,
+td {
+  justify-content: center;
+  font-size: 0.75rem;
+}
+
+tr:nth-child(odd) {
+}
+
+td {
+  border: 1px dotted white;
+}
+
+tr:nth-child(even) {
+  background-color: lightgray;
+}
+
+thead > tr:first-child {
+  background-color: lavenderblush;
+  border: 1px dotted black;
+}
+
+thead > td:first-child {
+  background-color: lightblue;
+  border: 1px dotted black;
+}
+
+tbody {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+*/ #employee-info {
+  display: flex;
+  flex-direction: row;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+footer > p {
+  flex-direction: column;
+  align-content: center;
+}
+
+.over-budget {
+  color: red;
+}
